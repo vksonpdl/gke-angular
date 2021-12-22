@@ -1,6 +1,7 @@
-FROM node:16.4.0 as build
+##################################################
+FROM node:latest as node
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install
+COPY package.json package-lock.json./
+RUN npm install 
 COPY . .
 RUN npm run prod 
