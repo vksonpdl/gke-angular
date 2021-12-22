@@ -1,4 +1,4 @@
-ROM node:12.16.1-alpine As builder
+FROM node:current-alpine3.14 As builder
 
 WORKDIR /src/app
 
